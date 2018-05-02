@@ -5,18 +5,18 @@ const socket = io.connect('http://localhost:3000', { 'forceNew': true })
 let nickname = document.getElementById('nickname'),
 		message = document.getElementById('message'),
 		btn = document.getElementById('send'),
-		output = document.getElementById('output');
+		output = document.getElementById('output')
 
 // Emit Events
 btn.addEventListener('click', () => {
-	socket.emit('chat', {
+	socket.emit('event', {
 		nickname: nickname.value,
 		message: message.value
 	})
 })
 
 // Listen for events
-socket.on('chat', (data) => {
+socket.on('event', (data) => {
 	let error = document.getElementById('feedback')
 	if ((data.nickname == '') && (data.message == '')) {
 		error.style.display = "block";
