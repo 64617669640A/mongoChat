@@ -1,0 +1,13 @@
+.messages {
+  height: 400px;
+}
+
+#send {
+  margin-top: 15px;
+  width: 100%;
+}
+
+#feedback {
+  display: none;
+  text-align: center;
+}

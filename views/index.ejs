@@ -1,0 +1,20 @@
+<% include partials/header %>
+
+  <div class="container">
+    <div class="col-md-6 col-lg-6 col-md-offset-3 col-lg-offset-3">
+      <h1 class="text-center">MongoChat <button class="btn btn-danger clearBtn">Clear</button></h1>
+      <div class="status"></div>
+      <div class="chat">
+        <input id="nickname" type="text" placeholder="What's Your Name?" class="username form-control" >
+        
+        <br>
+        <div id="output" class="messages well"></div>
+        <textarea id="message" placeholder="Enter Message.." class="form-control"  ></textarea>
+        <button id="send" type="button" class="btn btn-primary">Send</button>
+        <div id="feedback" class="alert alert-info"></div>
+      </div> <!-- /end .chat -->
+    </div> <!-- /end .col-md-6 col-lg-6 col-md-offset-3 col-lg-offset-3 -->
+   </div> <!-- /end .container -->
+
+<% include partials/footer %>
+ 
